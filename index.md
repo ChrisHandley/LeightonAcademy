@@ -5,7 +5,7 @@ permalink: index.html
 ---
 
 The best way to learn how to program is to do something useful,
-so this introduction to Python Flask is built around a common task:
+and each module will cover material that will allow for you to perform practical work:
 **creating an endpoint**.
 
 ### What is an Endpoint

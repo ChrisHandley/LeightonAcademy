@@ -15,9 +15,9 @@ The rendered version of the lesson is available at:
 
 | # |  Episode | Time | Question(s) |
 |--:|:---------|:----:|:------------|
-| 1 | [Introdcution to Flask][episode01] | 10 | Basics of Python and Flask |
-| 2 | [Using Templates][episode02] | 20 | Rendering Templates from Flask |
-| 3 | [Login Management][episode03] | 30 | Login, logout, registration |
+| 1 | [How Websites Work][episode01] | 10 | Basics of Websites and our First HTML |
+| 2 | [Styling our Website Text][episode02] | 10 | How do we make our page have more style |
+| 3 | [Hyperlinking][episode03] | 30 | Linking to other places |
 
 ## License
 Instructional material from this lesson is made available under the
