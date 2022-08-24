@@ -14,24 +14,46 @@ keypoints:
 - "HTML is not a programming language and so more complex functionaility requires out languages."
 ---
 
-## Flask - What is it
+## HTML - What is it?
 
-Flask is a means to create endpoints and webapps. It is a microframework.
+HTML standands for HyperText Markup Language. And webpages are built using it.
 
-It does not force you towards certain methods e.g. databases.
+Webpages and thus websites are built with multiple languages, that enable different tasks to be performed.
 
-Flask is used by Pintrest and LinkedIn.
+A website is split between "front end" and "back end" functionality. A the backend, functions are run so that information to captured or delivered to the front end. These functions might operate
+with databases, or other applications.
 
-A lot can be done with just Flask. But further libraries will extend what you can do- while Django is similar in aims but comes with a lot more assest making such apps bigger, and forces your hand on certain options.
+The front end is all about the display of information, and user interface that allows the user to trigger functions and events, or input and output data.
 
-Included in Flask are the components:
+HTML is a markup language, which means it defines in a document how information is displayed on a page e.g. where to position an image and how large.
 
-- Werkzeug - a WGSI toolkit
-- Jinja a template engine
-- MarkupSafe -  a string handling library
-- ItsDangerous - a data serialization library. Used to store the session of the Flask app in a cookie in a safe way.
+HTML can't process data, or tell a computer what to do. It onyl informs a browser how to render information on a page.
 
-## Hello World
+For the purpose of this tutorial and going forward, whenever we utilise HTML we are using the HTML5 standard.
+
+## URLs?
+
+An URL is a "uniform resource locator", and informs a browser where to look on the internet, or on a local machine, where to find a webpage or some other resource such as a file, an image, music, etc.
+
+Our browser is the "client" and interprets the information that is sent back by the "server" which the URL targets.
+
+The data between the client and server are sent using HTTP - HyperText Transfer Protocol.
+
+When the HTML document is returned, the browser reads the entire file to establish the "DOM" - the Document Object Model. This represents the page as nodes and objects and how they are interlinked, so that programming languages can interact with the webpage and the data within.
+
+## Development Tools?
+
+Most browsers have built in development tools. These allow you to inspect the webpage and how the HTML defines the elements of it, and how the webpage is styled and structured.
+
+The tool also allows us to inspect how the browser is communicating with ther server, and more.
+
+On Edge this can be opened using "cntrl+shift+I".
+
+If we have the tool open and refresh the page, the network panel  will list all the resources that the HTML of the webpage requests e.g. images, document fragments, or functions that are run.
+
+Selecting a URL in the list brings up further information, such as information about the file, the response headers, and from this we can analysis our webpages and determine why things are going wrong if there are errors.
+
+## My First Webpage!
 ~~~
 from flask import Flask
 app = Flask(__name__)
@@ -44,7 +66,7 @@ def hello() -> str:
 if __name__ == "__main__":
     app.run(debug=False)
 ~~~
-{: .language-python}
+{: .language-html}
 
 
 What does the above mean?
