@@ -11,7 +11,7 @@ The rendered version of the lesson is available at:
 <https://chrishandley.github.io/LeightonAcademy/>.
 
 
-## Episodes QQ - We need to change this
+## Episodes
 
 | # |  Episode | Time | Question(s) |
 |--:|:---------|:----:|:------------|
