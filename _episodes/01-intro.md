@@ -37,7 +37,9 @@ An URL is a "uniform resource locator", and informs a browser where to look on t
 
 Our browser is the "client" and interprets the information that is sent back by the "server" which the URL targets.
 
-![A Browser and a Server communicating](../fig/BrowserClient.png)
+|![A Browser and a Server communicating](../fig/BrowserClient.png)|
+|:--:|
+|<b>Figure: GET Parameters - Author: Seobility - License: CC BY-SA 4.0</b>|
 
 The data between the client and server are sent using HTTP - HyperText Transfer Protocol.
 
