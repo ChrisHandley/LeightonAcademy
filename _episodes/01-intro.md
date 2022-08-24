@@ -37,6 +37,8 @@ An URL is a "uniform resource locator", and informs a browser where to look on t
 
 Our browser is the "client" and interprets the information that is sent back by the "server" which the URL targets.
 
+![A Browser and a Server communicating](../fig/BrowserClient.png)
+
 The data between the client and server are sent using HTTP - HyperText Transfer Protocol.
 
 When the HTML document is returned, the browser reads the entire file to establish the "DOM" - the Document Object Model. This represents the page as nodes and objects and how they are interlinked, so that programming languages can interact with the webpage and the data within.
