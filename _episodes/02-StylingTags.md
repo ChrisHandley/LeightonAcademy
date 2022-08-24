@@ -44,7 +44,7 @@ Tags inform the browser how to interpret the text within.
 
 ```<head>``` is where we define the metadata of the webpage. This information is not rendered on the page, but is where we define styles we use, reference template html for our webpage to use, etc.
 
-Within the ```<head>``` we have to define the ```<title>`` which informs search engines and the browser of the title of the webpage. This is not rendered in the browser, but does appear in the tab of our browser.
+Within the ```<head>``` we have to define the ```<title>``` which informs search engines and the browser of the title of the webpage. This is not rendered in the browser, but does appear in the tab of our browser.
 
 The ```<body>``` tag wraps around the elements that will be rendered in our webpage. This is images, text, tables, lists, etc.
 
