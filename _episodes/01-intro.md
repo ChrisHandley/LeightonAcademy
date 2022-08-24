@@ -55,175 +55,57 @@ Selecting a URL in the list brings up further information, such as information a
 
 ## My First Webpage!
 ~~~
-from flask import Flask
-app = Flask(__name__)
-
-@app.route("/")
-def hello() -> str:
-    return "Hello World"
-
-
-if __name__ == "__main__":
-    app.run(debug=False)
+<!DOCTYPE html>
+<html>
+    ...
+</html>
 ~~~
 {: .language-html}
 
 
 What does the above mean?
 
-First we import from the `flask` library the `Flask` class.
+The opening ```<!DOCTYPE html>``` informs the client how to interpret the file, i.e. it's a HTML file.
 
-Then to the app variable we associate an instance of Flask. __name__ is the current name of the module we are building within.
+The next part of the file is wrapped by the HTML tag ```<html>```. We will explain tags later. But what is important about this tag is that it denotes
+which part of the file is html markup lanugage that needs to be interpreted to form the DOM.
 
-@app.route() is a decorator. This will associate to an URL serviced by the app some code, in our case the function hello().
-
-In this case the function is defined with '->'. This is an annotation. In this case a string class. So we can use this to find out what a function is taking as inputs and returning.
-
-The line checking is __name__ is identical to "__main__" is checking the variable is the same as __main__. So if this were a module being imported that would not be the case. In our example it is so app.run(debug=false) is run. This starts the app.
-
-To run the Flask app we can either;
+The simplest webpage we can make is one that has some text.
 
 ~~~
-$ python3 microblog.py
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to my Webpage!</title>
+  </head>
+  <body>
+    <p><b>My first Webpage</b></p>
+  </body>
+</html>
 ~~~
-{: .terminal}
+{: .language-html}
 
-or
 
-~~~
-$ export FLASK_APP=microblog.py
-$ flask run
-~~~
-{: .terminal}
 
-The latter is performed in the directory and is looking for microblog.py. Flask can be run with other keywords other than run.
 
-Doing so produces in the terminal the following
-
-~~~
-(flask-vue) chandley@LTW017:~/hello-world-flask$ flask run
- * Environment: production
-   WARNING: This is a development server. Do not use it in a production deployment.
-   Use a production WSGI server instead.
- * Debug mode: off
- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-~~~
-{: .output}
-
-We could add more routes to the app.
-
-~~~
-from flask import Flask, request
-app = Flask(__name__)
-
-@app.route("/")
-def hello() -> str:
-    return "Hello World"
-
-@app.route("/test", methods=['POST'])
-def respond():
-    content = request.json
-    body = {
-        "message": "Go Serverless v1.0! Your function executed successfully!",
-        "input": content
-    }
-
-    response = {
-        "statusCode": 200,
-        "body": content['value']
-    }
-
-    return response
-
-if __name__ == "__main__":
-    app.run(debug=False)
-~~~
-{: .language-python}
-
-Using Postman we can send the json file payload to our endpoint http://127.0.0.1:5000/test, and the response is the
-`value` in content in the response.
-
-~~~
-{
-    "body": "what",
-    "statusCode": 200
-}
-~~~
-{: .output}
-
-The decorator to our `respond` function has the methods attribute of POST. This informs the endpoint it can receive a payload.
-
-Request takes the payload, a json, and only a json, and processes it to content where is is held as a dictionary.
-
-> ## Better File Structure?
+> ## How do we add more text in a new paragraph?
 >
-> How do we improve the file structure?
-> Can we improve the way we import our routes?
+> How do we add more text but not in bold font?
 >
 > > ## Solution 
 > > ~~~
-> > microapp/
-> > ├── app
-> > │   ├── __init__.py
-> > │   └── routes.py
-> > └── microblog.py
+> >    <!DOCTYPE html>
+> >    <html>
+> >    <head>
+> >        <title>Welcome to my Webpage!</title>
+> >    </head>
+> >    <body>
+> >        <p><b>My first Webpage</b></p>
+> >        <p>Some text explaining the webpage<p>
+> >    </body>
+> >    </html>
 > > ~~~
-> > {: .terminal}
+> > {: .language-html}
 > > 
-> > The routes are split out from the main application
-> > as it makes it much easier to then have the routes for each endpoint
-> > in their own folder
-> >
-> > ~~~
-> > from app import app
-> > 
-> > if __name__ == "__main__":
-> >     app.run(debug=False)
-> > ~~~
-> > {: .language-python}
-> >
-> > A bit confusing, but what is happening is from the app folder the app instance is being imported.
-> >
-> > ~~~
-> > from flask import Flask
-> > 
-> > app = Flask(__name__)
-> > 
-> > from app import routes
-> > ~~~
-> > {: .language-python}
-> > 
-> > The `__init__.py` file informs python the the files in the folder can be imported as modules
-> > and can be left empty. If it is not, then it is preparing other things, like our app, that can then
-> > be imported elsewhere.
-> >
-> > ~~~
-> > from app import app
-> > from flask import request
-> > 
-> > @app.route("/")
-> > def hello() -> str:
-> >     return "Hello World"
-> > 
-> > @app.route("/test", methods=['POST'])
-> > def respond():
-> >     content = request.json
-> >     body = {
-> >         "message": "Go Serverless v1.0! Your function executed successfully!",
-> >         "input": content
-> >     }
-> > 
-> >     response = {
-> >         "statusCode": 200,
-> >         "body": content['value']
-> >     }
-> >     return response
-> > ~~~
-> > {: .language-python}
-> > 
-> > Here we again import the app instance from the app folder.
-> > Then we define some of our routes. Routes could be defined elsewhere and imported in a similar manner
-> > but then you must still import app from from app for the decorator to work
-> {: .solution}
 
 {% include links.md %}
