@@ -107,5 +107,6 @@ The simplest webpage we can make is one that has some text.
 > > ~~~
 > > {: .language-html}
 > > 
+> {: .solution}
 
 {% include links.md %}
