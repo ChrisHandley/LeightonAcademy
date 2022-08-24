@@ -1,17 +1,17 @@
 ---
-title: Python Flask Fundamentals
+title: HTML Fundamentals
 teaching: 10
 exercises: 10
 questions:
-- "What is Flask?"
-- "How can I create a simple Flask app?"
-- "How do I prepare it for extension?"
+- "What is HTML?"
+- "How can I make a simple webpage?"
+- "How can I inspect a webpage?"
 objectives:
-- "Build your first Flask app"
+- "Build your first Webpage"
 keypoints:
-- "Flask is a microframework running in Python."
-- "Django is similar but not minimal."
-- "Chalice is the AWS equivalent that supports AWS specifics."
+- "HTML is a markup language."
+- "HTML informs layout of a page and where resources are located to build the page."
+- "HTML is not a programming language and so more complex functionaility requires out languages."
 ---
 
 ## Flask - What is it
