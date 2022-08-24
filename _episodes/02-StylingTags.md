@@ -31,7 +31,7 @@ In our webpage so far we have simply added text and made it bold, or regular. Ho
 ~~~
 {: .language-html}
 
-In our worked example, we added a new paragraph of text, and made it regular text. This was achieved through the use of ```Tags``.
+In our worked example, we added a new paragraph of text, and made it regular text. This was achieved through the use of ```Tags```.
 
 
 Tags all look the same, where the tag type is within angled brackets. For example ```<head>```.
@@ -47,4 +47,27 @@ Tags inform the browser how to interpret the text within.
 Within the ```<head>``` we have to define the ```<title>`` which informs search engines and the browser of the title of the webpage. This is not rendered in the browser, but does appear in the tab of our browser.
 
 The ```<body>``` tag wraps around the elements that will be rendered in our webpage. This is images, text, tables, lists, etc.
+
+Some tags do not need closing as they do not have children elements. Images are an example of this.
+
+~~~
+<!DOCTYPE html>
+   <html>
+   <head>
+        <title>Welcome to my Webpage!</title>
+   </head>
+   <body>
+        <img src="images/logo.jpg">
+        <p><b>My first Webpage</b></p>
+        <p>Some text explaining the webpage<p>
+   </body>
+   </html>
+~~~
+{: .language-html}
+
+Notice that within the ```<img>``` tag we have define an ```attribute```. In this case the relative location of the image file with respect to the html file we are editing.
+
+
+
+
 {% include links.md %}
