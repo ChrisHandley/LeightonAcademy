@@ -16,11 +16,11 @@ keypoints:
 
 ## HTML - What is it?
 
-HTML standands for HyperText Markup Language. And webpages are built using it.
+HTML standands for ```HyperText Markup Language```. And webpages are built using it.
 
 Webpages and thus websites are built with multiple languages, that enable different tasks to be performed.
 
-A website is split between "front end" and "back end" functionality. A the backend, functions are run so that information to captured or delivered to the front end. These functions might operate
+A website is split between ```front end``` and ```back end``` functionality. A the backend, functions are run so that information to captured or delivered to the front end. These functions might operate
 with databases, or other applications.
 
 The front end is all about the display of information, and user interface that allows the user to trigger functions and events, or input and output data.
@@ -33,9 +33,9 @@ For the purpose of this tutorial and going forward, whenever we utilise HTML we 
 
 ## URLs?
 
-An URL is a "uniform resource locator", and informs a browser where to look on the internet, or on a local machine, where to find a webpage or some other resource such as a file, an image, music, etc.
+An URL is a ```uniform resource locator```, and informs a browser where to look on the internet, or on a local machine, where to find a webpage or some other resource such as a file, an image, music, etc.
 
-Our browser is the "client" and interprets the information that is sent back by the "server" which the URL targets.
+Our browser is the ```client``` and interprets the information that is sent back by the ```server``` which the URL targets.
 
 |![A Browser and a Server communicating](../fig/BrowserClient.png)|
 |:--:|
@@ -51,7 +51,7 @@ Most browsers have built in development tools. These allow you to inspect the we
 
 The tool also allows us to inspect how the browser is communicating with ther server, and more.
 
-On Edge this can be opened using "cntrl+shift+I".
+On Edge this can be opened using ```cntrl+shift+I```.
 
 If we have the tool open and refresh the page, the network panel  will list all the resources that the HTML of the webpage requests e.g. images, document fragments, or functions that are run.
 

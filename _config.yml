@@ -102,5 +102,5 @@ highlighter: rouge
 
 episode_order:
       - 01-intro
-      - 02-template
+      - 02-StylingTags
       - 03-login
