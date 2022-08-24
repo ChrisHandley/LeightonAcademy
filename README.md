@@ -1,14 +1,14 @@
-# Introduction to Pyhton Flask
+# Introduction to HTML
 
-An introduction to Flask for Python
+An introduction to HTML
 
 ## About the Lesson
 
-This lesson teaches Python programmers how to use Flask to build webapps.
+This lesson teaches the fundamentals of HTML.
 
 
 The rendered version of the lesson is available at:
-<https://chrishandley.github.io/intro-to-python-flask/>.
+<https://chrishandley.github.io/LeightonAcademy/>.
 
 
 ## Episodes QQ - We need to change this
@@ -17,7 +17,10 @@ The rendered version of the lesson is available at:
 |--:|:---------|:----:|:------------|
 | 1 | [How Websites Work][episode01] | 10 | Basics of Websites and our First HTML |
 | 2 | [Styling our Website Text][episode02] | 10 | How do we make our page have more style |
-| 3 | [Hyperlinking][episode03] | 30 | Linking to other places |
+| 3 | [Hyperlinking][episode03] | 10 | Linking to other places |
+| 4 | [Lists][episode04] | 10 | Rendering lists |
+| 5 | [Tables][episode05] | 10 | Rendering tables |
+| 6 | [Document Structure and Special Characters][episode06] | 10 | How we structure our HTML document and deal with special characters | 
 
 ## License
 Instructional material from this lesson is made available under the
