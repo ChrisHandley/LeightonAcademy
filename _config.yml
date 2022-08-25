@@ -103,4 +103,4 @@ highlighter: rouge
 episode_order:
       - 01-intro
       - 02-stylingtags
-      - 03-anchorslinks
+      # - 03-anchorslinks
