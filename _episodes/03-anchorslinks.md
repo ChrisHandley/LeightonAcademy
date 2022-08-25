@@ -11,7 +11,7 @@ objectives:
 - "Set up our login manager."
 - "Access a database using python."
 keypoints:
-- "Python has many database libraries and queries are done using neat python syntax rather than SQL."
+- "Hypertext links can link to many different resources, even within the same webpage."
 ---
 
 ## Anchors?
@@ -27,7 +27,7 @@ The general structure of the anchor is as follows;
 
 > ## Can you create a hyperlink to Leighton.com?
 >
-> Can you create a hyperlin in your webpage?
+> Can you create a hyperlink in your webpage?
 > Can you make an image a link?
 >
 > > ## Solution 
@@ -120,8 +120,6 @@ To create a link to this section heading, using an anchor, you reference the sec
 
 > ## Can you create a hyperlink to a third section of text, where sections 1 and 2 have 300 words, and section 3 has 50?
 >
-> Can you create a hyperlin in your webpage?
-> Can you make an image a link?
 >
 > > ## Solution 
 > > ~~~
@@ -223,5 +221,36 @@ To create a link to this section heading, using an anchor, you reference the sec
 
 We will go into more detail about headings tags in a later lesson.
 
+## Can we download files?
+
+Using the image we already have rendered in our webpage, can we download this if we click on the picture directly, without right clicking? 
+This is useful if we want to render a low res version of the image but want to offer a higher resolution image for download.
+
+In the anchor we can set the href to the relative path where the file is stored, and add a further attribute, ```download```.
+
+
+> ## Can you create a hyperlink to the image using theimage as the link, where it downloads the image?
+>
+>
+> > ## Solution 
+> > ~~~
+> >    <!DOCTYPE html>
+> >    <html>
+> >    <head>
+> >        <title>Welcome to my Webpage!</title>
+> >    </head>
+> >    <body>
+> >     <a href=”images/logo.svg” download>
+> >         <img src="images/logo.svg" alt="A logo">
+> >     </a>
+> >        <p><b>My first Webpage</b></p>
+> >        <p>Some text explaining the webpage<p>
+> >        <p><a href="https://www.leighton.com/">Link to Leighton</a></p>
+> >    </body>
+> >    </html>
+> > ~~~
+> > {: .language-html}
+> > 
+> {: .solution}
 
 {% include links.md %}
