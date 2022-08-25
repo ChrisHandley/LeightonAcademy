@@ -48,6 +48,8 @@ Within the ```<head>``` we have to define the ```<title>``` which informs search
 
 The ```<body>``` tag wraps around the elements that will be rendered in our webpage. This is images, text, tables, lists, etc.
 
+The ```<footer>``` tag is used to place credits and copyright information within the webpage. There can be mulitple footers, places after different sections within the body.
+
 Some tags do not need closing as they do not have children elements. Images are an example of this.
 
 ~~~
@@ -65,7 +67,52 @@ Some tags do not need closing as they do not have children elements. Images are 
 ~~~
 {: .language-html}
 
-Notice that within the ```<img>``` tag we have define an ```attribute```. In this case the relative location of the image file with respect to the html file we are editing.
+Notice that within the ```<img>``` tag we have define an ```attribute```. In this case the relative location of the image file with respect to the html file we are editing. In the case of images, we can modify the width and and height using further attributes.
+
+
+> ## Modify the height and width of an image?
+>
+> What happens if the height or width only is given as an attribute?
+>
+> How does this differ it the image is an svg file?
+>
+> > ~~~
+> > <!DOCTYPE html>
+> >  <html>
+> >  <head>
+> >        <title>Welcome to my Webpage!</title>
+> >   </head>
+> >   <body>
+> >        <img src="images/logo.jpg" height="100px">
+> >        <p><b>My first Webpage</b></p>
+> >        <p>Some text explaining the webpage<p>
+> >   </body>
+> >   </html>
+> > ~~~
+> > {: .language-html}
+> > 
+> > Modifying just the height or the width means the image is altered but the other attribute changes to retain the image ratios.
+> >
+> > Modifying both indepently causes an image to be distorted unless it is a svg.
+> {: .solution}
+
+
+Other tags that are used for styling are;
+
+- ```<strong>``` similar to bold
+- ```<i>``` italics
+- ```<em>``` emphasis
+- ```<mark>``` highlight the background of the text
+- ```<small>``` shrinks the text
+- ```<strike>``` strike through
+- ```<u>``` underline
+- ```<del>``` deleted
+- ```<ins>``` inserted
+- ```<sub>``` subscript
+- ```<sup>``` superscript
+
+Many tag attributes for styling are now unused due to the implentation of CSS.
+
 
 
 
