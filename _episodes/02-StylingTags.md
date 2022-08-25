@@ -76,6 +76,7 @@ Notice that within the ```<img>``` tag we have define an ```attribute```. In thi
 >
 > How does this differ it the image is an svg file?
 >
+> > ## Solution 
 > > ~~~
 > > <!DOCTYPE html>
 > >  <html>
