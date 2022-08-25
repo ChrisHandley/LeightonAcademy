@@ -47,6 +47,26 @@ The general structure of the anchor is as follows;
 > > {: .language-html}
 > > 
 > {: .solution}
+>
+> > ## Solution 
+> > ~~~
+> >    <!DOCTYPE html>
+> >    <html>
+> >    <head>
+> >        <title>Welcome to my Webpage!</title>
+> >    </head>
+> >    <body>
+> >        <p><b>My first Webpage</b></p>
+> >        <p>Some text explaining the webpage<p>
+> >        <p><a href="https://www.leighton.com/"><img src="images/logo.svg"/></a></p>
+> >    </body>
+> >    </html>
+> > ~~~
+> > {: .language-html}
+> > 
+> {: .solution}
+
+
 
 
 
