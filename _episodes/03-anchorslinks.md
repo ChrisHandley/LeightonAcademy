@@ -66,7 +66,12 @@ The general structure of the anchor is as follows;
 > > 
 > {: .solution}
 
+Adding a hypertext link that opens your email client is just as easy
 
+~~~
+<a href=mailto:christopher.handley@leighton.com>Email Me!</a>
+~~~
+{: .language-html}
 
 
 
