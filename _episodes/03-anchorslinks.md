@@ -1,9 +1,12 @@
 ---
-title: Login and Databases with Python and Flask
-teaching: 20
+title: Hyperlinking and Anchors
+teaching: 10
 exercises: 10
 questions:
-- "Login and session management with Flask?"
+- "How to we link to other pages?"
+- "How can we link to other places in the same page?"
+- "How can we download a file that is linked?"
+- "How can we link to emails?"
 objectives:
 - "Set up our login manager."
 - "Access a database using python."
@@ -11,7 +14,43 @@ keypoints:
 - "Python has many database libraries and queries are done using neat python syntax rather than SQL."
 ---
 
-## Setup
+## Anchors?
+The ```<a>``` tag defines an ```anchor``` element. The ```href``` attribute defines the ```hyperlink``` to a resource, such as a webpage, files, email addresses, or even locations within the same webpage.
+
+The general structure of the anchor is as follows;
+
+~~~
+<a href="some address">Some text that is the hyperlink text</a>
+~~~
+{: .language-html}
+
+
+> ## Can you create a hyperlink to Leighton.com?
+>
+> Can you create a hyperlin in your webpage?
+> Can you make an image a link?
+>
+> > ## Solution 
+> > ~~~
+> >    <!DOCTYPE html>
+> >    <html>
+> >    <head>
+> >        <title>Welcome to my Webpage!</title>
+> >    </head>
+> >    <body>
+> >        <p><b>My first Webpage</b></p>
+> >        <p>Some text explaining the webpage<p>
+> >        <p><a href="https://www.leighton.com/">Link to Leighton</a></p>
+> >    </body>
+> >    </html>
+> > ~~~
+> > {: .language-html}
+> > 
+> {: .solution}
+
+
+
+
 Sooner or later we want an app that can manage user sessions and logging in and out so that users
 can access their particular data and personalised preferences.
 
