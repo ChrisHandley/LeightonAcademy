@@ -3,7 +3,7 @@ title: Tags
 teaching: 10
 exercises: 10
 questions:
-- "How apply styles to my text?"
+- "Semantic and Non-semantic tags"
 - "How can I insert an image?"
 - "How can we define further properties through a tag?"
 objectives:
@@ -134,6 +134,7 @@ Notice that within the ```<img>``` tag we have define an ```attribute```. In thi
 > > Modifying both indepently causes an image to be distorted unless it is a svg.
 > {: .solution}
 
+We will look at the use of semantic tags later for structuring our HTML document.
 
 
 {% include links.md %}
