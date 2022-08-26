@@ -1,5 +1,5 @@
 ---
-title: Styling and Tags
+title: Tags
 teaching: 10
 exercises: 10
 questions:
@@ -40,7 +40,9 @@ If the type of tag can contain children elements, then the tag needs to be close
 
 All tags that require being closed as closed in the same manner, with a forward slash at the start of the tag type name within the angled brackets.
 
-Tags inform the browser how to interpret the text within.
+Tags inform the browser how to interpret the text within, primarily informing the browser about the structure of the document. Tags can be ```semantic``` in nature, 
+informing the broweser about the purpose of the code - in this case informing the browser
+about structure and heirarchy of the content in the page, and if the content is text, and image, or a table. The browser will give default styles to content within tags, but these styles can be altered through CSS.
 
 ```<head>``` is where we define the metadata of the webpage. This information is not rendered on the page, but is where we define styles we use, reference template html for our webpage to use, etc.
 
@@ -98,7 +100,8 @@ Notice that within the ```<img>``` tag we have define an ```attribute```. In thi
 > {: .solution}
 
 
-Other tags that are used for styling are;
+Other tags that are used are ```non-semantic``` in nature. They have some default styles, but they are simply tags that have no other meaning when intepreted by the browser, but we can assocatiate to them styles through CSS.
+
 
 - ```<strong>``` similar to bold
 - ```<i>``` italics
