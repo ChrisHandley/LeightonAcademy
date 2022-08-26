@@ -102,6 +102,7 @@ Notice that within the ```<img>``` tag we have define an ```attribute```. In thi
 
 Other tags that are used are ```non-semantic``` in nature. They have some default styles, but they are simply tags that have no other meaning when intepreted by the browser, but we can assocatiate to them styles through CSS.
 
+Here are some non-semantic tags that have some default styles
 
 - ```<strong>``` similar to bold
 - ```<i>``` italics
