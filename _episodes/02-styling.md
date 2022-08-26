@@ -40,7 +40,40 @@ If the type of tag can contain children elements, then the tag needs to be close
 
 All tags that require being closed as closed in the same manner, with a forward slash at the start of the tag type name within the angled brackets.
 
-Tags inform the browser how to interpret the text within, primarily informing the browser about the structure of the document. Tags can be ```semantic``` in nature, 
+
+## Non-Semantic Elements
+
+Some tags are ```non-semantic``` in nature. They have some default styles, but they are simply tags that have no other meaning when intepreted by the browser, but we can assocatiate to them styles through CSS. These tags
+do not tell us anything about the content that they wrap around.
+
+Here are some non-semantic tags that have some default styles
+
+- ```<strong>``` similar to bold
+- ```<i>``` italics
+- ```<em>``` emphasis
+- ```<mark>``` highlight the background of the text
+- ```<small>``` shrinks the text
+- ```<strike>``` strike through
+- ```<u>``` underline
+- ```<del>``` deleted
+- ```<ins>``` inserted
+- ```<sub>``` subscript
+- ```<sup>``` superscript
+- ```<div>```
+- ```<span>```
+
+Many tag attributes for styling are now unused due to the implentation of CSS.
+
+Before HTML5, a non-semantic tag could have its purpose defined by defining a class and associating it to a tag through the class attribute.
+
+~~~
+<div class="header>Some Text</div>
+~~~
+{: .language-html}
+
+## Semantics
+
+In HTML5, ```semantic``` tags inform the browser how to interpret the content within, primarily informing the browser about the structure of the document, the the type of cotent. Tags can be semantic in nature, 
 informing the broweser about the purpose of the code - in this case informing the browser
 about structure and heirarchy of the content in the page, and if the content is text, and image, or a table. The browser will give default styles to content within tags, but these styles can be altered through CSS.
 
@@ -53,6 +86,8 @@ The ```<body>``` tag wraps around the elements that will be rendered in our webp
 The ```<footer>``` tag is used to place credits and copyright information within the webpage. There can be mulitple footers, places after different sections within the body.
 
 Some tags do not need closing as they do not have children elements. Images are an example of this.
+
+A benefit of semantic tags is that they also improve the readability of the code.
 
 ~~~
 <!DOCTYPE html>
@@ -98,27 +133,6 @@ Notice that within the ```<img>``` tag we have define an ```attribute```. In thi
 > >
 > > Modifying both indepently causes an image to be distorted unless it is a svg.
 > {: .solution}
-
-
-Other tags that are used are ```non-semantic``` in nature. They have some default styles, but they are simply tags that have no other meaning when intepreted by the browser, but we can assocatiate to them styles through CSS.
-
-Here are some non-semantic tags that have some default styles
-
-- ```<strong>``` similar to bold
-- ```<i>``` italics
-- ```<em>``` emphasis
-- ```<mark>``` highlight the background of the text
-- ```<small>``` shrinks the text
-- ```<strike>``` strike through
-- ```<u>``` underline
-- ```<del>``` deleted
-- ```<ins>``` inserted
-- ```<sub>``` subscript
-- ```<sup>``` superscript
-
-Many tag attributes for styling are now unused due to the implentation of CSS.
-
-
 
 
 
